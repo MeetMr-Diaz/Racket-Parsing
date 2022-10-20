@@ -2,10 +2,6 @@
 (require parser-tools/lex)
 (require(prefix-in : parser-tools/lex-sre))
 
-; Max Diaz
-; Parser Project
-; Sources attached on a word document
-;
 
 (define scannedTokens                                   ; Scanner: I only tokenized the characters needed for the project                       
   (lexer
@@ -118,6 +114,3 @@
 
 (display "\ninput file 3\n")
 (parse "input03.txt")   ; It gets to this file and it fails
-
-(parse "input04.txt")   ; never gets here
-(parse "input05.txt")   ; I comment the other one in orser to test the other files.
